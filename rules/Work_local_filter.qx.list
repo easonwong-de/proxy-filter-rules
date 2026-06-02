@@ -1,0 +1,4 @@
+#DOMAIN-SUFFIX,haitong
+#onesec
+IP-CIDR,106.75.91.149/32,Work
+HOST,console.onesec.net,Work
