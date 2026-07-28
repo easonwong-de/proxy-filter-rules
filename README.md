@@ -246,3 +246,15 @@ RULE-SET,https://raw.githubusercontent.com/LceAn/proxy-filter-rules/main/rules/T
 Made with ❤️ by LceAn
 
 </div>
+
+---
+
+<!-- repo-readme-standard:v1 -->
+## 仓库维护信息
+
+- 项目类型：资料/集合
+- 当前状态：本轮已整理（2026-07-28）
+- 可见性：public
+- 维护节奏：按季度补索引、许可和去重证据
+- 相关仓库：已记录 quantumultX_filter 规则迁移证据
+- 维护边界：普通文档和代码更新可直接提交；归档、删除、历史重写或强制推送需单独确认。
