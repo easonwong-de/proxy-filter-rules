@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 [![Quantumult X](https://img.shields.io/badge/Quantumult%20X-Supported-007AFF?style=flat-square&logo=apple)](https://apps.apple.com/app/id1443988620)
 [![Surge](https://img.shields.io/badge/Surge-Supported-FF6900?style=flat-square&logo=surge)](https://nssurge.com/)
-[![Updates](https://img.shields.io/badge/Updates-Daily-green?style=flat-square)](https://github.com/LceAn/proxy-filter-rules/commits/main)
+[![Updates](https://img.shields.io/badge/Updates-On%20demand-green?style=flat-square)](https://github.com/LceAn/proxy-filter-rules/commits/main)
 [![Stars](https://img.shields.io/github/stars/LceAn/proxy-filter-rules?style=flat-square)](https://github.com/LceAn/proxy-filter-rules/stargazers)
 [![Issues](https://img.shields.io/github/issues/LceAn/proxy-filter-rules?style=flat-square)](https://github.com/LceAn/proxy-filter-rules/issues)
 
@@ -18,7 +18,7 @@
 **特点 | Features:**
 - ✅ **双平台支持** — Quantumult X & Surge
 - ✅ **精准分流** — 针对特定网站和服务的精细规则
-- ✅ **持续更新** — 每日更新，保持规则最新
+- ✅ **持续更新** — 按需校验和更新规则
 - ✅ **易于使用** — 一键订阅，自动更新
 - ✅ **开源免费** — MIT 许可，完全免费使用
 
@@ -34,16 +34,16 @@
 
 ```ini
 [filter_remote]
-https://raw.githubusercontent.com/LceAn/proxy-filter-rules/main/rules/AI.list, tag=🤖 AI 服务, enabled=true
-https://raw.githubusercontent.com/LceAn/proxy-filter-rules/main/rules/WeChat.list, tag=💬 微信, enabled=true
+https://raw.githubusercontent.com/LceAn/proxy-filter-rules/main/rules/AI.qx.list, tag=🤖 AI 服务, enabled=true
+https://raw.githubusercontent.com/LceAn/proxy-filter-rules/main/rules/WeChat.qx.list, tag=💬 微信, enabled=true
 ```
 
 #### 本地引用
 
 ```ini
 [filter_local]
-include-filter=rules/AI.list
-include-filter=rules/WeChat.list
+include-filter=rules/AI.qx.list
+include-filter=rules/WeChat.qx.list
 ```
 
 ### Surge
@@ -64,6 +64,8 @@ proxy-filter-rules/
 ├── README.md               # 本文件
 └── LICENSE
 ```
+
+旧仓库 `quantumultX_filter` 的三份规则已逐字节迁入对应 `*.qx.list`，迁移提交和 SHA-256 证据见 [`MIGRATIONS.md`](MIGRATIONS.md)。
 
 ---
 
@@ -170,8 +172,8 @@ proxy-filter-rules/
 
 ```ini
 [filter_remote]
-https://raw.githubusercontent.com/LceAn/proxy-filter-rules/main/rules/AI.list, tag=🤖 AI 服务, enabled=true
-https://raw.githubusercontent.com/LceAn/proxy-filter-rules/main/rules/WeChat.list, tag=💬 微信, enabled=true
+https://raw.githubusercontent.com/LceAn/proxy-filter-rules/main/rules/AI.qx.list, tag=🤖 AI 服务, enabled=true
+https://raw.githubusercontent.com/LceAn/proxy-filter-rules/main/rules/WeChat.qx.list, tag=💬 微信, enabled=true
 https://raw.githubusercontent.com/LceAn/proxy-filter-rules/main/rules/Telegram.list, tag=✈️ Telegram, enabled=true
 https://raw.githubusercontent.com/LceAn/proxy-filter-rules/main/rules/YouTube.list, tag=📺 YouTube, enabled=true
 ```
@@ -215,7 +217,7 @@ RULE-SET,https://raw.githubusercontent.com/LceAn/proxy-filter-rules/main/rules/T
 
 | 指标 | 数值 |
 |------|------|
-| 规则文件 | 56 个 |
+| 规则文件 | 64 个 |
 | 规则总数 | 4000+ 条 |
 | 支持平台 | Quantumult X, Surge |
 | 数据来源 | 原创 + blackmatrix7 + skk.moe |
