@@ -64,3 +64,11 @@ python3 -m unittest discover -s tests -v
 ## 许可证
 
 仓库自有内容使用 [Apache License 2.0](LICENSE)。带独立来源或许可证头的第三方规则继续受各自声明约束，尤其是 `rules/*.conf` 中标注的 AGPL-3.0；根许可证不会覆盖或替代这些上游条款。
+
+---
+
+## 文档
+
+- [CHANGELOG.md](CHANGELOG.md) — 更新日志
+- [ROADMAP.md](ROADMAP.md) — 未来更新计划
+- [MIGRATIONS.md](MIGRATIONS.md) — 规则迁移记录
